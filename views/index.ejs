@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style type="text/css">
+    	*{margin: 0;padding: 0;}
+    	body{padding: 0;}
+    	.bigbox{width: 300px;height: 400px;background: #fff;padding: 6px;float: left;border: 1px solid #ccdcdc}
+    	.imt{width: 195px;height: 260px;margin: 0 auto;}
+    	.imt img{width: 195px;height: 260px;}
+    </style>
+  </head>
+  <body>
+  	<% for(var i=0;i<arr.length;i++) {%>
+  		    <div class="bigbox">
+    	<div class="imt"><img src=<%=arr[i][0] %> /></div>
+    	<p class="p1"><%=arr[i][4] %></p>
+    	<p class="p2"><%=arr[i][1] %></p>
+    	<p class="p3"><%=arr[i][2] %></p>
+    	<p class="p4"><%=arr[i][3] %></p>
+    	<p class="p5">自营</p>
+    </div>
+    
+    <%}%>
+  </body>
+</html>
